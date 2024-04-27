@@ -1,0 +1,71 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	--wbackground: #000;
+	--wtext: #838789;
+	--wyellow: #b59f3b;
+	--wgreen: #538d4e;
+	--wdarkgrey: #3a3a3c;
+	--wlightgrey: #818384;
+	--wtext: #f8f8f8;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--wbackground);
+	color: var(--wtext);
+	height: 100vh;
+	width: 100vw;
+}
+
+main {
+	padding: 32px;
+}
+
+/* navbar style section */
+.navbar {
+	width: 100%;
+	height: 64px;
+	border-bottom: solid 1px var(--wdarkgrey);
+	border-top: solid 1px var(--wdarkgrey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 32px;
+}
+
+/* gameboard style section */
+#gameboard {
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+}
+
+/* gameinput style section */
+#gameinput {
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+	padding: 32px;
+}
+
+/* letsq style section */
+#letsq {
+	height: 64px;
+	width: 64px;
+	border: solid 3px var(--wdarkgrey);
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+}
